@@ -21,7 +21,7 @@ function App() {
     <>
     <Navbar name={name}/>
     <Routes>
-      <Route path='/' element={<Home/>}></Route>
+      <Route path='/quizapp' element={<Home/>}></Route>
       <Route path='/myquizes' element={<Myquizes/>}></Route>
       <Route path='/playquiz' element={<Playquiz onPlay={getName}/>}></Route>
       <Route path='/CreateNewQuiz' element={<CreateNewQuiz/>}></Route>
