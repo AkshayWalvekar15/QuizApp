@@ -34,7 +34,7 @@ export default function Navbar({name}) {
         <Box component='img' sx={{width:110,height:30}} src={logo} alt='logo'/>
         {isMobile ?(<DrawerComponent/>):(<Stack direction={'row'} spacing={2}>
             <Tabs value={activeTab} onChange={handelActiveTab}>
-            <Tab value='home' href="/" style={{textTransform:'none',fontWeight:700}} component={Link} to={"/"} label='Home'></Tab>
+            <Tab value='home'  style={{textTransform:'none',fontWeight:700}} component={Link} to={"/quizapp"} label='Home'></Tab>
             <Tab value='myquizes' style={{textTransform:'none',fontWeight:700}} component={Link} to={"/myquizes"} href="/myquizes" label='My Quizes'></Tab>
             <Tab value='playquiz' style={{textTransform:'none',fontWeight:700}} component={Link} to={"/playquiz"} label='Play Quiz'></Tab>
             <Typography variant='h6' style={{textTransform:'none',fontWeight:500,marginTop:8}}>{name}</Typography>

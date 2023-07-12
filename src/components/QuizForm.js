@@ -32,7 +32,7 @@ const QuizForm = () => {
     storeMyQuizes(quiz)
     setTitle('');
     setQuestions([]);
-    navigate('/')
+    navigate('/quizapp')
   };
 
 
